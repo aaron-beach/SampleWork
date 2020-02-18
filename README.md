@@ -37,18 +37,19 @@
 - i18next: "^19.1.0"
 
 ## Installing Samplework
+>To install this project, follow these steps:
 
->To install, follow these steps:
-- cd into spa folder 
 ```sh
+cd ../spa
 yarn install
 ```
 
 ## Using Samplework
 
->To use, follow these steps:
-- cd into spa folder 
+>To use this project, follow these steps:
+
 ```sh
+cd ../spa
 yarn run start
 ```
 
