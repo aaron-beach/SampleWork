@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to SampleWork 👋</h1>
----
+
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/aaron-beach/SampleWork/blob/master/README.md" target="_blank">
@@ -10,7 +10,7 @@
 >Profile Forms is a section form a larger React app that allows Users to modify their profile information.
 
 ## Table of contents
----
+
 * [Prerequisites](#prerequisites)
 * [Technologies](#technologies)
 * [Installing SampleWork](#installing-samplework)
@@ -19,12 +19,12 @@
 * [License](#license)
 
 ## Prerequisites
----
+
 >Before you begin, ensure you have met the following requirements:
 >* copy `.env.template` as `.env` and make any necessary changes.
 
 ## Technologies
----
+
 Project is created with:
 
 - Bootstrap: "^4.4.1"
@@ -35,13 +35,13 @@ Project is created with:
 - i18next: "^19.1.0"
 
 ## Installing Samplework
----
+
 ```sh
 yarn install
 ```
 
 ## Using Samplework
----
+
 
 >To use SampleWork, follow these steps:
 
@@ -50,7 +50,7 @@ yarn run start
 ```
 
 ## Author
----
+
 
 👤 **Aaron Beach**
 
@@ -59,7 +59,7 @@ yarn run start
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/arbeach\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/arbeach\/)
 
 ## License
----
+
 
 This project uses the following license: MIT License
 
