@@ -9,6 +9,8 @@
 
 >Profile Forms is a section form a larger React app that allows Users to modify their profile information.
 
+>The profile within the app is being constructed by another party outside of React. Data will be updated via API Post request. 
+
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
@@ -25,7 +27,7 @@
 
 ## Technologies
 
-Project is created with:
+>Project is created with:
 
 - Bootstrap: "^4.4.1"
 - React: "^16.12.0" 
