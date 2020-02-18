@@ -11,6 +11,8 @@
 
 >The profile within the app is being constructed by another party outside of React. Data will be updated via API Post request. 
 
+![SampleWork](https://github.com/aaron-beach/SampleWork/blob/master/spa/src/images/SampleSite.png)
+
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
