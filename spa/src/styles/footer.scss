@@ -1,0 +1,96 @@
+.footer_area {
+  padding-top: 3rem;
+}
+
+.f_bg {
+  background: #ece6fd;
+  box-shadow: 0 -1px 0 0 rgba(231, 236, 246, 0.004);
+}
+
+.footer_bottom {
+  color: #7f88a6;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 20px 0 60px;
+}
+
+.f_400 {
+  font-weight: 400;
+}
+
+.footer_area p {
+  color: #677294;
+  font-size: 16px;
+}
+
+.footer_bottom p a {
+  transition: color 0.2s linear;
+}
+
+.footer_area a,
+.btn,
+button {
+  outline: none;
+  text-decoration: none;
+}
+
+.f_social_icon_two a {
+  color: #969db4;
+  font-size: 20px;
+  margin: 0 9.5px;
+}
+
+i:before {
+  margin-left: 0 !important;
+}
+
+.footer_bottom .f_menu {
+  margin-bottom: 0;
+}
+
+.footer_bottom .f_menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.footer_bottom .f_menu li a {
+  color: #7f88a6;
+  transition: color 0.2s linear;
+}
+
+.footer_bottom .f_menu li + li {
+  margin-left: 16px;
+}
+
+.footer_bottom .f_menu li + li:before {
+  background: #b1b7ca;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  margin-right: 18px;
+  vertical-align: middle;
+  width: 1px;
+}
+
+.footer_area a,
+.btn,
+button {
+  outline: none;
+  text-decoration: none;
+}
+
+.footer_bottom .f_menu li + li {
+  margin-left: 16px;
+}
+.footer_bottom .f_menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.banner_top .subcribes .form-control:focus,
+.price_btn,
+.s_subcribes .form-control,
+.f_widget.about-widget .f_list li a:before {
+  border-color: #837fe5;
+}

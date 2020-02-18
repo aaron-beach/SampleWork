@@ -1,0 +1,7 @@
+// Override variables and define a few new ones
+@import "./styles/variables.scss";
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./styles/header.scss";
+@import "./styles/footer.scss";
+@import "./styles/bootstrapOverrides.scss";
