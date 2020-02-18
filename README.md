@@ -38,15 +38,16 @@
 
 ## Installing Samplework
 
+>To install, follow these steps:
+- cd into spa folder 
 ```sh
 yarn install
 ```
 
 ## Using Samplework
 
-
->To use SampleWork, follow these steps:
-
+>To use, follow these steps:
+- cd into spa folder 
 ```sh
 yarn run start
 ```
@@ -58,7 +59,7 @@ yarn run start
 
 * Website: aaronbeach.dev
 * Github: [@aaron-beach](https://github.com/aaron-beach)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/arbeach\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/arbeach\/)
+* LinkedIn: [@arbeach/](https://linkedin.com/in/arbeach/)
 
 ## License
 
