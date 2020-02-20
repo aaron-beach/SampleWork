@@ -30,7 +30,7 @@ function RiseNav() {
         <Container>
           <Navbar.Brand to="/">
             <Logo>
-              <i class="fa fa-check-circle" aria-hidden="true"/>Sample
+              <i className="fa fa-check-circle" aria-hidden="true"/>Sample
             </Logo>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu}>
