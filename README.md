@@ -11,7 +11,7 @@
 
 >The profile within the app is being constructed by another party outside of React. Data will be updated via API Post request. 
 
-![SampleWork](https://github.com/aaron-beach/SampleWork/blob/master/spa/src/images/SampleSite.png)
+![SampleWork](https://github.com/aaron-beach/SampleWork/blob/master/src/images/SampleSite.png)
 
 ## Table of contents
 
@@ -42,7 +42,6 @@
 >To install this project, follow these steps:
 
 ```sh
-cd ../spa
 yarn install
 ```
 
@@ -51,7 +50,6 @@ yarn install
 >To use this project, follow these steps:
 
 ```sh
-cd ../spa
 yarn run start
 ```
 
