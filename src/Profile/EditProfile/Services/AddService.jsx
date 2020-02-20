@@ -1,4 +1,4 @@
-import { Form, Button, Modal } from "react-bootstrap";
+import { Form, Button, Modal, InputGroup } from "react-bootstrap";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { renderInvalidMessage } from "SharedComponents/ValidationMessage";
@@ -61,10 +61,22 @@ function AddService({ onClose, isEditing, editService }) {
           {errors.serviceDuration && renderInvalidMessage()}
         </Form.Group>
 
-        <Form.Group controlId="image">
-          <Form.Label>Image</Form.Label>
-          <Form.Control name="image" type="file" />
-        </Form.Group>
+        <InputGroup className="input-group">
+          <div className="custom-file">
+            <input
+              type="file"
+              className="custom-file-input"
+              id="inputGroupFile01"
+              aria-describedby="inputGroupFileAddon01"
+            />
+            <label
+              className="custom-file-label text-muted"
+              htmlFor="inputGroupFile01"
+            >
+              Image
+            </label>
+          </div>
+        </InputGroup>
 
         <Form.Group controlId="description">
           <Form.Label className="sr-only">Description</Form.Label>
