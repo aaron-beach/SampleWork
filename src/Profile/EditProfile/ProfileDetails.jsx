@@ -1,6 +1,7 @@
 import { Button, Col, Card, Form, Row } from "react-bootstrap";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { renderInvalidMessage } from "SharedComponents/ValidationMessage";
 
 function ProfileDetails() {
   const { register, handleSubmit, errors } = useForm();
@@ -8,19 +9,19 @@ function ProfileDetails() {
     console.log(data);
   }; // form submit function will invoke after successful validation
 
-  const invalidMsg = (
-    <Form.Control.Feedback type="invalid">
-      This field is required
-    </Form.Control.Feedback>
-  );
-
   return (
-    <Card>
+    <Card className="mb-3">
       <Card.Body>
         <Card.Title>User Details</Card.Title>
         <Form noValidate onSubmit={handleSubmit(onSubmit)}>
-          <Form.Group as={Row} controlId="userName">
-            <Col xs="12" sm="6">
+          <Row>
+            <Form.Group
+              as={Col}
+              xs="12"
+              sm="6"
+              controlId="firstName"
+              className="mb-0"
+            >
               <Form.Label className="sr-only">First Name</Form.Label>
               <Form.Control
                 name="firstName"
@@ -29,9 +30,15 @@ function ProfileDetails() {
                 type="text"
                 isInvalid={Boolean(errors.firstName)}
               />
-              {errors.firstName && invalidMsg}
-            </Col>
-            <Col xs="12" sm="6">
+              {errors.firstName && renderInvalidMessage()}
+            </Form.Group>
+            <Form.Group
+              as={Col}
+              xs="12"
+              sm="6"
+              controlId="lastName"
+              className="mb-0"
+            >
               <Form.Label className="sr-only">Last Name</Form.Label>
               <Form.Control
                 name="lastName"
@@ -40,12 +47,17 @@ function ProfileDetails() {
                 type="text"
                 isInvalid={Boolean(errors.lastName)}
               />
-              {errors.lastName && invalidMsg}
-            </Col>
-          </Form.Group>
-
-          <Form.Group as={Row} controlId="organization">
-            <Col xs="12" sm="6">
+              {errors.lastName && renderInvalidMessage()}
+            </Form.Group>
+          </Row>
+          <Row>
+            <Form.Group
+              as={Col}
+              xs="12"
+              sm="6"
+              controlId="title"
+              className="mb-0"
+            >
               <Form.Label className="sr-only">Title</Form.Label>
               <Form.Control
                 name="title"
@@ -54,9 +66,15 @@ function ProfileDetails() {
                 type="text"
                 isInvalid={Boolean(errors.title)}
               />
-              {errors.title && invalidMsg}
-            </Col>
-            <Col xs="12" sm="6">
+              {errors.title && renderInvalidMessage()}
+            </Form.Group>
+            <Form.Group
+              as={Col}
+              xs="12"
+              sm="6"
+              controlId="company"
+              className="mb-0"
+            >
               <Form.Label className="sr-only">Company</Form.Label>
               <Form.Control
                 name="company"
@@ -64,11 +82,16 @@ function ProfileDetails() {
                 ref={register}
                 type="text"
               />
-            </Col>
-          </Form.Group>
-
-          <Form.Group as={Row} controlId="location">
-            <Col xs="12" sm="6">
+            </Form.Group>
+          </Row>
+          <Row>
+            <Form.Group
+              as={Col}
+              xs="12"
+              sm="6"
+              controlId="location"
+              className="mb-0"
+            >
               <Form.Label className="sr-only">City</Form.Label>
               <Form.Control
                 name="city"
@@ -77,9 +100,15 @@ function ProfileDetails() {
                 type="text"
                 isInvalid={Boolean(errors.city)}
               />
-              {errors.city && invalidMsg}
-            </Col>
-            <Col xs="12" sm="6">
+              {errors.city && renderInvalidMessage()}
+            </Form.Group>
+            <Form.Group
+              as={Col}
+              xs="12"
+              sm="6"
+              controlId="country"
+              className="mb-0"
+            >
               <Form.Label className="sr-only">Country</Form.Label>
               <Form.Control
                 name="country"
@@ -88,10 +117,9 @@ function ProfileDetails() {
                 type="text"
                 isInvalid={Boolean(errors.country)}
               />
-              {errors.country && invalidMsg}
-            </Col>
-          </Form.Group>
-
+              {errors.country && renderInvalidMessage()}
+            </Form.Group>
+          </Row>
           <Button type="submit">Save</Button>
         </Form>
       </Card.Body>

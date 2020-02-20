@@ -17,22 +17,22 @@ function Footer() {
             </div>
             <div className="col-lg-4 col-md-3 col-sm-6">
               <div className="f_social_icon_two text-center">
-                <a href="#">
+                <a href="alink">
                   <i className="fab fa-medium-m"></i>
                 </a>
-                <a href="#">
+                <a href="www.google.com">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#">
+                <a href="www.google.com">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="www.google.com">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a href="www.google.com">
                   <i className="fab fa-telegram-plane"></i>
                 </a>
-                <a href="#">
+                <a href="www.google.com">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </div>

@@ -1,6 +1,7 @@
 import { Form, Button, Card } from "react-bootstrap";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { renderInvalidMessage } from "SharedComponents/ValidationMessage";
 
 function AboutMe() {
   const { register, handleSubmit, errors } = useForm();
@@ -8,14 +9,8 @@ function AboutMe() {
     console.log(data);
   }; // form submit function will invoke after successful validation
 
-  const invalidMsg = (
-    <Form.Control.Feedback type="invalid">
-      This field is required
-    </Form.Control.Feedback>
-  );
-
   return (
-    <Card>
+    <Card className="mb-3">
       <Card.Body>
         <Card.Title>About Me</Card.Title>
         <Form noValidate onSubmit={handleSubmit(onSubmit)}>
@@ -28,7 +23,7 @@ function AboutMe() {
               type="text"
               isInvalid={Boolean(errors.headline)}
             />
-            {errors.headline && invalidMsg}
+            {errors.headline && renderInvalidMessage()}
           </Form.Group>
           <Form.Group>
             <Form.Label className="sr-only">Description</Form.Label>
@@ -40,7 +35,7 @@ function AboutMe() {
               rows="2"
               isInvalid={Boolean(errors.description)}
             />
-            {errors.description && invalidMsg}
+            {errors.description && renderInvalidMessage()}
           </Form.Group>
           <Button type="submit">Save</Button>
         </Form>
