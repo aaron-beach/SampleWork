@@ -112,6 +112,31 @@ select.form-control {
   position: relative;
 }
 
+.input-group {
+  margin-bottom: 2rem;
+}
+
+.custom-file-label {
+  background-color: $body-bg;
+  border-radius: 4px;
+  border: 1px solid #e9ebf4;
+  color: #051441;
+  font-size: 15px;
+  padding-left: 30px;
+
+  &:focus,
+  &:active {
+    border-color: $primary;
+    outline: none;
+    // box-shadow: 0 10px 10px 0 rgba(0, 11, 40, 0.07);
+  }
+
+  &::after {
+    color: $white;
+    background-color: $primary-btn;
+  }
+}
+
 input[type="text"],
 input[type="password"] {
   -webkit-appearance: none;
@@ -125,6 +150,48 @@ input[type="password"] {
 }
 .form-group.col-12 > .invalid-feedback {
   bottom: 11px;
+}
+
+// Custom switch bar
+.custom-switch .custom-control-label::before {
+  height: 0.6rem;
+  top: 0.45rem;
+  background-color: $gray-500;
+  width: 2.5rem;
+  left: -2.75rem;
+  opacity: 0.5;
+}
+.custom-switch.reverse .custom-control-label::before {
+  left: initial;
+  right: -2.75rem;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  background: $primary;
+}
+
+.custom-switch {
+  padding-left: 3rem;
+}
+.custom-switch.reverse {
+  padding-left: 0;
+  padding-right: 3rem;
+}
+
+// Custom switch dot
+.custom-switch .custom-control-label::after {
+  top: 0;
+  left: -3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+}
+.custom-switch.reverse .custom-control-label::after {
+  left: initial;
+  right: -1.75rem;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background: $primary;
+  transform: translateX(1.25rem);
 }
 
 .tooltip-inner {
