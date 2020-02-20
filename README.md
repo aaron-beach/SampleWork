@@ -25,7 +25,9 @@
 ## Prerequisites
 
 >Before you begin, ensure you have met the following requirements:
->* copy `.env.template` as `.env` and make any necessary changes.
+> WARNING
+> It is bad practice to commit an env file because it can lead to credentials and/or secrets getting committed.
+> I am including it in this sample project to reduce setup steps for the reviewer of this project
 
 ## Technologies
 
